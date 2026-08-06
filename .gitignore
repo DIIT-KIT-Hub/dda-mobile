@@ -15,3 +15,37 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+ 
+# Godot
+.godot/
+*.translation
+export.cfg
+export_presets.cfg
+
+# Android / Gradle
+android-plugin/**/build/
+android-plugin/**/.gradle/
+android-plugin/local.properties
+*.apk
+*.aab
+*.keystore
+!debug.keystore
+
+# Kotlin / IntelliJ
+.idea/
+*.iml
+.kotlin/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Data / models
+ml/data/*.csv
+ml/data/*.parquet
+ml/models/*.tflite
+ml/models/*.onnx
